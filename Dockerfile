@@ -3,6 +3,17 @@ FROM node:4.1.2
 
 EXPOSE 3000
 
-RUN npm install gulp -g
+RUN npm install -g gulp
 
-ENTRYPOINT gulp serve-and-sync
+# Define working directory.
+WORKDIR /app
+
+COPY ./package.json /app/
+
+RUN npm install
+
+COPY . /app/
+
+# devguide no need angular
+CMD gulp serve-and-sync-devguide
+
