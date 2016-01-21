@@ -1,3 +1,5 @@
+As you know, ajax.googleapis.com can't be visited from the fucking wall.Use other to replace.
+
 # Angular.io
 Angular.io is currently the preview site for Angular 2. This site also includes links to other helpful angular resources including Angular 1, Angular Material, and AngularFire.
 
